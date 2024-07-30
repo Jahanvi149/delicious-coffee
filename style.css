@@ -1,0 +1,353 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'PT Serif', serif;
+}
+.container {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header {
+    background: #b13941;
+    padding: 10px 0;
+}
+header .nav-menu {
+}
+
+header .nav-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+header .nav-menu ul li {}
+
+header .nav-menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
+    margin-right: 116px;
+    text-transform: capitalize;
+}
+header .nav-menu ul li:last-child a {
+    margin-right: 0;
+}
+
+header .nav-menu ul li a.logo {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50px;
+    display: block;
+}
+.hero-sec {
+    padding: 100px 0;
+    text-align: center;
+    background-image: url(F:/jahanvi/psd-9/images/coffee-banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-sec h1 {
+    font-size: 90px;
+    line-height: 1;
+    text-transform: capitalize;
+    color: #feedda;
+    width: 640px;
+    margin: 0 auto 70px;
+    max-width: 100%;
+}
+
+.hero-sec p {
+    color: #fefefe;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.hero-sec a {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: #b13941;
+    padding: 10px 20px;
+    color: #feedda;
+}
+.hero-sec:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.hero-sec .container {
+    z-index: 1;
+    position: relative;
+}
+.video-sec {
+    padding: 100px 0;
+    background: #b13941;
+    text-align: center;
+}
+
+.video-sec .video-wrap {
+   
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    line-height: 0;
+    position: relative;
+}
+.video-sec .video-wrap:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.video-sec .video-wrap:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid #fff;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 2;
+}
+video {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+}
+.map {
+	padding: 100px 0;
+}
+
+.map .map-wrap {
+}
+
+.map .map-wrap iframe {
+    width: 100%;
+}
+
+
+.accordian {
+    padding: 100px 0;
+    background-image: linear-gradient(to bottom right,#a667e9 , #6763e7);
+}
+
+.accordian .accordian-block {
+    background: #fff;
+    padding: 50px;
+}
+
+.acc-wrapper {display: flex;flex-wrap: wrap;}
+.accordian .accordian-block .acc-wrapper .content h2 {
+    font-size: 40px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.accordian .accordian-block .acc-wrapper .image {
+    width: 50%;
+}
+
+.accordian .accordian-block .acc-wrapper.content {}
+
+.accordian .accordian-block .acc-wrapper .content {
+    width: 50%;
+}
+
+.accordian .accordian-block .acc-wrapper .content .accordian-section {
+    list-style: none;
+}
+
+.accordian .accordian-block .acc-wrapper .content .accordian-section li {
+    border-bottom: 1px solid #91919d;
+}
+
+.accordian .accordian-block .acc-wrapper .content .accordian-section li .title {}
+
+.accordian .accordian-block .acc-wrapper .content .accordian-section li .title h3 {
+    color: #4b4c5f;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    padding: 10px 10px 10px 0;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.accordian .accordian-block .acc-wrapper .content .accordian-section li .title h3:after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #f47b56;
+    border-left: 3px solid #f47b56;
+    transform: translateY(-50%) rotate(225deg);
+    display: inline-block;
+    right: 20px;
+    top: 50%;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.accordian .accordian-block .acc-wrapper .content .accordian-section li.active .title h3:after {
+    transform: rotate(45deg);
+}
+.accordian .accordian-block .acc-wrapper .content .accordian-section li .body-content {
+     display: none; 
+}
+
+.accordian .accordian-block .acc-wrapper .content .accordian-section li.active .body-content {
+    display: block;
+}
+
+.accordian .accordian-block .acc-wrapper .content .accordian-section li .body-content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #91919d;
+}
+
+
+
+
+
+
+
+.tab-main {
+    padding: 100px 0;
+}
+
+.tab-main .tab-wrap ul.tab-btn {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #000;
+}
+
+.tab-main .tab-wrap {
+    border: 1px solid #000;
+}
+
+.tab-main .tab-wrap ul.tab-btn li {
+    margin-right: 30px;
+}
+
+.tab-main .tab-wrap ul.tab-btn li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 600;
+    color: #000;
+    padding: 10px 20px;
+    display: inline-block;
+    background: #ccc;
+}
+.tab-main .tab-wrap ul.tab-btn li a:hover {
+    background: #e19b9b;
+}
+.tab-main .tab-wrap ul.tab-btn li.tab-active a {
+    background: #e19b9b;
+}
+.tab-main .tab-wrap ul.tab-btn li:last-child {
+    margin-right: 0;
+}
+
+.tab-main .tab-wrap .tab-body .tab-content {
+    padding: 20px;
+    display: none;
+}
+.tab-main .tab-wrap .tab-body .tab-content.tab-active {
+    display: block;
+}
+
+.tab-main .tab-wrap .tab-body .tab-content h3 {text-decoration: none;
+	text-transform: capitalize;font-size: 25px;line-height: 1;font-weight: 600;color: #000;display: inline-block;text-align: center;margin-bottom: 20px;}
+
+.tab-main .tab-wrap .tab-body .tab-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    display: block;
+}
+
+
+/***************************Slider Section Css Start**********************/
+
+.slider-main {
+    padding: 100px 0;
+    background-image: linear-gradient(to bottom right,#a667e9 , #6763e7);
+}
+
+.slider-main .slider-wrap h2 {
+    font-size: 50px;
+    line-height: 1;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.slider-main .slider-wrap {}
+
+.slider-main .slider-wrap ul.slider-list {
+    list-style: none;
+    background: #fff;
+    padding:  50px;
+}
+
+/*.slider-main .slider-wrap ul.slider-list li.slider-item {
+    margin-bottom: 30px;
+}
+*/
+.slider-main .slider-wrap ul.slider-list li.slider-item .slider-item-wrap {}
+
+.slider-main .slider-wrap ul.slider-list li.slider-item .slider-item-wrap h3 {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 30px;
+    line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+/***************************Slider Section Css End**********************/
